@@ -14,7 +14,6 @@ function routeInfoSelector(routes, history) {
   return {
     ...findRoute(routes, history),
     history,
-    // Location object gets sent to locationInfo
   }
 }
 // Pass in the state object and return some info about a "route".
