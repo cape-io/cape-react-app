@@ -27,11 +27,10 @@ export default function configureStore(initialState, firebase) {
       currentYear: new Date().getFullYear(),
     },
   }
-  const initState = merge(initialState, calculatedState)
 
   const store = createStore(
     reducer,
-    initState,
+    merge(initialState, calculatedState),
     composeEnhancers(
       applyMiddleware([
         historyMiddleware(window.history),
