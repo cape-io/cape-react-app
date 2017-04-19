@@ -2,16 +2,13 @@ import { createElement, PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { get, isFunction } from 'lodash'
 
-// Top level "router". Heh.
-import * as RouteIndex from '../components/RouteIndex'
-
 // It just uses a specific component given a prop value.
 // Less declaritive perhaps but really easy to reason about.
 // You can use this concept anywhere!
 
 function Router(props) {
   // Define the prop that defines what component to render.
-  const { loading, route: { id } } = props
+  const { loading, route: { id }, RouteIndex } = props
   if (loading) {
     return createElement(RouteIndex.loading, null)
   }
@@ -25,7 +22,9 @@ function Router(props) {
 
 Router.propTypes = {
   loading: PropTypes.bool.isRequired,
-  route: PropTypes.object.isRequired,
+  route: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+  }),
 }
 
 export function selectSessionId(state) {

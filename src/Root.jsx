@@ -16,8 +16,12 @@ class Root extends Component {
     )
   }
 }
-
+// @see cape-redux-reducer
 Root.propTypes = {
-  store: PropTypes.object.isRequired,
+  store: PropTypes.shape({
+    config: PropTypes.object,
+    db: PropTypes.object,
+    graph2: PropTypes.object,
+  }).isRequired,
 }
 export default Root

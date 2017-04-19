@@ -5,9 +5,11 @@
   "dependencies": {
     "cape-firebase": "^0.6.0",
     "cape-redux-reducer": "^3.7.1",
+    "cape-select": "^2.4.0",
     "lodash": "^4.17.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
     "redux": "^3.6.0",
     "redux-history-sync": "^3.1.0",
     "redux-thunk": "^2.2.0",
