@@ -1,7 +1,7 @@
 {
   "name": "cape-react-app",
-  "version": "1.0.2",
-  "main": "lib/module.js",
+  "version": "1.0.3",
+  "main": "lib/index.js",
   "dependencies": {
     "cape-firebase": "^1.0.1",
     "cape-redux-reducer": "^3.10.0",
