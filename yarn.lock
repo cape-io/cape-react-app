@@ -1249,9 +1249,9 @@ cape-firebase@^0.3.0:
     redux-field "^4.4.1"
     redux-graph "^2.10.0"
 
-cape-firebase@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/cape-firebase/-/cape-firebase-0.6.0.tgz#1efe1cfe297edfedac0ef28fffaa391c28e0cff3"
+cape-firebase@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/cape-firebase/-/cape-firebase-1.0.1.tgz#9a032d7cc8da7d836a033926fcb854743d20fce8"
   dependencies:
     cape-lodash "^1.11.0"
     cape-redux "^3.1.0"
@@ -1266,6 +1266,12 @@ cape-firebase@^0.6.0:
 cape-lodash@^1.10.0, cape-lodash@^1.11.0, cape-lodash@^1.7.0, cape-lodash@^1.8.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/cape-lodash/-/cape-lodash-1.11.0.tgz#ba6d6d20e20bc771dcfcf32775d395fda4fb5007"
+  dependencies:
+    lodash "^4.17.2"
+
+cape-lodash@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/cape-lodash/-/cape-lodash-1.12.0.tgz#75da92fd3a3920db8966cff0103e03b65b82821b"
   dependencies:
     lodash "^4.17.2"
 
@@ -1293,7 +1299,26 @@ cape-redux-collection@^4.0.1:
     redux-history-sync "^3.1.0"
     reselect "^3.0.0"
 
-cape-redux-reducer@^3.6.0, cape-redux-reducer@^3.7.1:
+cape-redux-reducer@^3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/cape-redux-reducer/-/cape-redux-reducer-3.10.0.tgz#0bf7e7a5c0f7d468e57572530bb777370e5d5d60"
+  dependencies:
+    cape-firebase "^1.0.1"
+    cape-lodash "^1.11.0"
+    cape-redux "^3.1.0"
+    cape-redux-auth "^4.0.0"
+    cape-redux-collection "^4.0.1"
+    cape-select "^2.4.0"
+    location-info "^4.0.2"
+    lodash "^4.17.4"
+    redux "^3.6.0"
+    redux-field "^4.5.0"
+    redux-graph "^2.12.1"
+    redux-history-sync "^3.1.0"
+    redux-thunk "^2.2.0"
+    redux-windowsize "^1.3.1"
+
+cape-redux-reducer@^3.6.0:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/cape-redux-reducer/-/cape-redux-reducer-3.7.1.tgz#3d445d4f26fa80617ab45d24950b0561b8ca96fb"
   dependencies:
@@ -3650,6 +3675,17 @@ loader-utils@0.2.x, loader-utils@^0.2.11, loader-utils@^0.2.16, loader-utils@^0.
     json5 "^0.5.0"
     object-assign "^4.0.1"
 
+location-info@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/location-info/-/location-info-4.0.2.tgz#8f00c9856a620dae87fdcc659e7d93f7663b5ecd"
+  dependencies:
+    cape-lodash "^1.12.0"
+    cape-redux "^3.1.0"
+    cape-select "^2.4.0"
+    lodash "^4.17.4"
+    reselect "^3.0.0"
+    url-pattern "^1.0.2"
+
 lodash-es@^4.2.0, lodash-es@^4.2.1:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.4.tgz#dcc1d7552e150a0640073ba9cb31d70f032950e7"
@@ -5643,6 +5679,10 @@ url-parse@^1.0.1, url-parse@^1.1.1:
   dependencies:
     querystringify "0.0.x"
     requires-port "1.0.x"
+
+url-pattern@^1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/url-pattern/-/url-pattern-1.0.3.tgz#0409292471b24f23c50d65a47931793d2b5acfc1"
 
 url@^0.11.0:
   version "0.11.0"
