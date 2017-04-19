@@ -8,10 +8,10 @@ import routing from './routing'
 class Root extends Component {
   render() {
     // Provider only wants a single child.
-    const { store } = this.props
+    const { store, RouteIndex } = this.props
     return createElement(Provider, { store },
       createElement('div', null,
-        createElement(connect(routing)(Router), null)
+        createElement(connect(routing)(Router), { RouteIndex })
       )
     )
   }
@@ -23,5 +23,6 @@ Root.propTypes = {
     db: PropTypes.object,
     graph2: PropTypes.object,
   }).isRequired,
+  RouteIndex: PropTypes.objectOf(PropTypes.node).isRequired,
 }
 export default Root
