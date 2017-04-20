@@ -24,6 +24,6 @@ Root.propTypes = {
     db: PropTypes.object,
     graph2: PropTypes.object,
   }).isRequired,
-  RouteIndex: PropTypes.objectOf(PropTypes.node).isRequired,
+  RouteIndex: PropTypes.objectOf(PropTypes.func).isRequired,
 }
 export default Root

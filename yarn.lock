@@ -1257,28 +1257,13 @@ cape-firebase@^0.3.0:
     redux-field "^4.4.1"
     redux-graph "^2.10.0"
 
-cape-firebase@^1.0.2:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/cape-firebase/-/cape-firebase-1.0.3.tgz#d37eaba9f67ee15c2424b72fde16676e2518dc76"
+cape-firebase@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/cape-firebase/-/cape-firebase-1.0.5.tgz#83656f6f75d8f73e3a4159f50b19b546f32b6d7a"
   dependencies:
     cape-lodash "^1.11.0"
     cape-redux "^3.1.0"
     cape-redux-auth "^4.0.0"
-    cape-redux-reducer "^3.6.0"
-    cape-select "^2.4.0"
-    firebase "^3.6.9"
-    lodash "^4.17.4"
-    redux-field "^4.4.1"
-    redux-graph "^2.11.0"
-
-cape-firebase@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/cape-firebase/-/cape-firebase-1.0.4.tgz#d7fe4ef3ede4ed821b412c16b77fb2ed55699331"
-  dependencies:
-    cape-lodash "^1.11.0"
-    cape-redux "^3.1.0"
-    cape-redux-auth "^4.0.0"
-    cape-redux-reducer "^3.6.0"
     cape-select "^2.4.0"
     firebase "^3.6.9"
     lodash "^4.17.4"
@@ -1315,17 +1300,17 @@ cape-redux-collection@^4.0.1:
     redux-history-sync "^3.1.0"
     reselect "^3.0.0"
 
-cape-redux-reducer@^3.10.1, cape-redux-reducer@^3.6.0:
-  version "3.10.1"
-  resolved "https://registry.yarnpkg.com/cape-redux-reducer/-/cape-redux-reducer-3.10.1.tgz#6b2408261c26907ff3eedc616b18bb8609c148c2"
+cape-redux-reducer@^3.10.3, cape-redux-reducer@^3.6.0:
+  version "3.10.3"
+  resolved "https://registry.yarnpkg.com/cape-redux-reducer/-/cape-redux-reducer-3.10.3.tgz#f252aee07a0d0444106d9314bcc8dcab6daa3a4a"
   dependencies:
-    cape-firebase "^1.0.2"
+    cape-firebase "^1.0.5"
     cape-lodash "^1.12.0"
     cape-redux "^3.1.0"
     cape-redux-auth "^4.0.0"
     cape-redux-collection "^4.0.1"
     cape-select "^2.4.0"
-    location-info "^4.0.2"
+    location-info "^4.0.3"
     lodash "^4.17.4"
     redux "^3.6.0"
     redux-field "^4.5.0"
@@ -3700,7 +3685,7 @@ loader-utils@0.2.x, loader-utils@^0.2.11, loader-utils@^0.2.16, loader-utils@^0.
     json5 "^0.5.0"
     object-assign "^4.0.1"
 
-location-info@^4.0.2, location-info@^4.0.3:
+location-info@^4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/location-info/-/location-info-4.0.3.tgz#4bf62df08c4f80f1c5c3e5e588966e047fbe4686"
   dependencies:

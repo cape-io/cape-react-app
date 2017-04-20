@@ -25,8 +25,9 @@ Router.propTypes = {
   loading: PropTypes.bool.isRequired,
   route: PropTypes.shape({
     id: PropTypes.string.isRequired,
+    path: PropTypes.string.isRequired,
   }),
-  RouteIndex: PropTypes.objectOf(PropTypes.node).isRequired,
+  RouteIndex: PropTypes.objectOf(PropTypes.func).isRequired,
 }
 
 export function selectSessionId(state) {
