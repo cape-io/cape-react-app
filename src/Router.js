@@ -1,4 +1,5 @@
-import { createElement, PropTypes } from 'react'
+import { createElement } from 'react'
+import { PropTypes } from 'prop-types'
 import { connect } from 'react-redux'
 import { get, isFunction } from 'lodash'
 
@@ -25,6 +26,7 @@ Router.propTypes = {
   route: PropTypes.shape({
     id: PropTypes.string.isRequired,
   }),
+  RouteIndex: PropTypes.objectOf(PropTypes.node).isRequired,
 }
 
 export function selectSessionId(state) {

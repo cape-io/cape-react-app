@@ -1,4 +1,5 @@
-import { createElement, Component, PropTypes } from 'react'
+import { createElement, Component } from 'react'
+import PropTypes from 'prop-types'
 // Component makes Redux store available to the connect() calls in children.
 import { connect, Provider } from 'react-redux'
 import Router from './Router'

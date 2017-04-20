@@ -1258,8 +1258,8 @@ cape-firebase@^0.3.0:
     redux-graph "^2.10.0"
 
 cape-firebase@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/cape-firebase/-/cape-firebase-1.0.2.tgz#b4de3c808a68f82a98d9901248046a2fb3e42063"
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/cape-firebase/-/cape-firebase-1.0.3.tgz#d37eaba9f67ee15c2424b72fde16676e2518dc76"
   dependencies:
     cape-lodash "^1.11.0"
     cape-redux "^3.1.0"
@@ -1271,9 +1271,9 @@ cape-firebase@^1.0.2:
     redux-field "^4.4.1"
     redux-graph "^2.11.0"
 
-cape-firebase@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/cape-firebase/-/cape-firebase-1.0.3.tgz#d37eaba9f67ee15c2424b72fde16676e2518dc76"
+cape-firebase@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/cape-firebase/-/cape-firebase-1.0.4.tgz#d7fe4ef3ede4ed821b412c16b77fb2ed55699331"
   dependencies:
     cape-lodash "^1.11.0"
     cape-redux "^3.1.0"
@@ -4669,7 +4669,7 @@ promise@7.1.1, promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.0.0, prop-types@^15.5.7, prop-types@~15.5.7:
+prop-types@^15.0.0, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@~15.5.7:
   version "15.5.8"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.8.tgz#6b7b2e141083be38c8595aa51fc55775c7199394"
   dependencies:
