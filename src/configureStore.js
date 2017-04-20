@@ -31,12 +31,12 @@ export default function configureStore(initialState, firebase) {
     reducer,
     merge(initialState, calculatedState),
     composeEnhancers(
-      applyMiddleware([
+      applyMiddleware(
         historyMiddleware(window.history),
         // Build func to listen for firebase changes and dispatch to redux.
         fireMiddleware(firebase),
         thunk,
-      ]),
+      ),
     )
   )
   syncHistoryWithStore(store, window)
