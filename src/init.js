@@ -11,6 +11,7 @@ import Root from './Root'
 // @param initState Define our inital state object.
 // This could be a fetch() to an API endpoint or something saved to window.reactData for example.
 export default function init(initialState, RouteIndex) {
+  console.log(getConfig(initialState))
   const firebase = initializeFirebase(getConfig(initialState))
   // Configure and create our Redux store.
   const store = configureStore(initialState, firebase)

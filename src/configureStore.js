@@ -27,7 +27,7 @@ export default function configureStore(initialState, firebase) {
       currentYear: new Date().getFullYear(),
     },
   }
-
+  console.log(reducer)
   const store = createStore(
     reducer,
     merge(initialState, calculatedState),

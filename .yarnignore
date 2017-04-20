@@ -5,4 +5,3 @@ build/
 .babelrc
 .editorconfig
 .eslintrc
-.gitignore
