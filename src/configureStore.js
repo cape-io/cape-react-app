@@ -1,7 +1,7 @@
 import { merge } from 'lodash'
 import { applyMiddleware, compose, createStore } from 'redux'
 import thunk from 'redux-thunk'
-import { fireMiddleware, reduxFirebase } from 'cape-firebase'
+import { middleware as fireMiddleware, reduxFirebase } from 'cape-firebase'
 import reducer from 'cape-redux-reducer'
 import { createSizeAction, createRemAction, listenResize } from 'redux-windowsize'
 import {
@@ -27,7 +27,6 @@ export default function configureStore(initialState, firebase) {
       currentYear: new Date().getFullYear(),
     },
   }
-  console.log(reducer)
   const store = createStore(
     reducer,
     merge(initialState, calculatedState),
@@ -36,8 +35,6 @@ export default function configureStore(initialState, firebase) {
         historyMiddleware(window.history),
         // Build func to listen for firebase changes and dispatch to redux.
         fireMiddleware(firebase),
-        // socket,
-        // cookieMiddleware,
         thunk,
       ]),
     )
