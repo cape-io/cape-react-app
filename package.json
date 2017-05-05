@@ -1,9 +1,9 @@
 {
   "name": "cape-react-app",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "main": "lib/index.js",
   "dependencies": {
-    "cape-firebase": "^1.0.5",
+    "cape-firebase": "^1.0.8",
     "cape-redux-reducer": "^3.10.3",
     "cape-select": "^2.4.0",
     "location-info": "^4.0.3",

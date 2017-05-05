@@ -1270,6 +1270,19 @@ cape-firebase@^1.0.5:
     redux-field "^4.4.1"
     redux-graph "^2.11.0"
 
+cape-firebase@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/cape-firebase/-/cape-firebase-1.0.8.tgz#798fb599e8bf14757278312dbbc36c030308293e"
+  dependencies:
+    cape-lodash "^1.11.0"
+    cape-redux "^3.1.0"
+    cape-redux-auth "^4.0.0"
+    cape-select "^2.4.0"
+    firebase "^3.6.9"
+    lodash "^4.17.4"
+    redux-field "^4.4.1"
+    redux-graph "^2.11.0"
+
 cape-lodash@^1.10.0, cape-lodash@^1.11.0, cape-lodash@^1.12.0, cape-lodash@^1.7.0, cape-lodash@^1.8.0:
   version "1.12.0"
   resolved "https://registry.yarnpkg.com/cape-lodash/-/cape-lodash-1.12.0.tgz#75da92fd3a3920db8966cff0103e03b65b82821b"
