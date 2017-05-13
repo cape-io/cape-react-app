@@ -12,13 +12,13 @@ export const routeParam = partial(select, routeParams)
 function routeInfoSelector(routes, history) {
   if (!history) return history
   return {
-    ...findRoute(routes, history.location),
+    ...findRoute(routes, history.location), // params
     history,
   }
 }
 // Pass in the state object and return some info about a "route".
 // selectActiveKeyDefault() is a helper function to grab the current location info.
-const routingSelector = createSelector(
+export const routingSelector = createSelector(
   selectRoutes,
   selectActiveKeyDefault,
   routeInfoSelector
