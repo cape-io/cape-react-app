@@ -7,16 +7,13 @@ import { get, isFunction } from 'lodash'
 // Less declaritive perhaps but really easy to reason about.
 // You can use this concept anywhere!
 
-function Router(props) {
-  // Define the prop that defines what component to render.
-  const { loading, route: { id }, RouteIndex } = props
+function Router({ RouteIndex, loading, ...props }) {
   if (loading) {
     return createElement(RouteIndex.loading, null)
   }
   // Select your component from the routeIndex defined above.
-  // console.log('routeId', id)
   // Provide default Component if there is no match.
-  const MainElement = get(RouteIndex, id, RouteIndex.home)
+  const MainElement = get(RouteIndex, props.route.id, RouteIndex.home)
   // Render that component. Send along any props this component got.
   return createElement(MainElement, props)
 }
