@@ -1,22 +1,13 @@
 import { merge } from 'lodash'
-import { applyMiddleware, compose, createStore } from 'redux'
+import { applyMiddleware, createStore } from 'redux'
 import thunk from 'redux-thunk'
 import { middleware as fireMiddleware, reduxFirebase } from 'cape-firebase'
 import reducer from 'cape-redux-reducer'
 import { createSizeAction, createRemAction, listenResize } from 'redux-windowsize'
-import {
-  getInitState,
-  historyMiddleware,
-  syncHistoryWithStore,
-} from 'redux-history-sync'
+import { getInitState, historyMiddleware, syncHistoryWithStore } from 'redux-history-sync'
+import { composeWithDevTools } from 'redux-devtools-extension'
 
 /* global window */
-
-const composeEnhancers = (
-  process.env.NODE_ENV !== 'production' &&
-  typeof window === 'object' &&
-  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ // eslint-disable-line no-underscore-dangle
-) || compose
 
 // Configure and create Redux store.
 // Function requires an initialState object.
@@ -30,7 +21,7 @@ export default function configureStore(initialState, firebase) {
   const store = createStore(
     reducer,
     merge(initialState, calculatedState),
-    composeEnhancers(
+    composeWithDevTools(
       applyMiddleware(
         historyMiddleware(window.history),
         // Build func to listen for firebase changes and dispatch to redux.

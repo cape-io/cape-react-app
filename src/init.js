@@ -1,10 +1,7 @@
-import { createElement } from 'react'
-import { render } from 'react-dom'
+import { renderRoot } from 'cape-router-component'
 import initializeFirebase, { getConfig } from 'cape-firebase'
 // Redux code to build store.
 import configureStore from './configureStore'
-// Root React component.
-import Root from './Root'
 
 /* global window */
 
@@ -16,9 +13,9 @@ export default function init(initialState, RouteIndex) {
   const store = configureStore(initialState, firebase)
 
   // Define our destination where we insert our root react component.
-  const destEl = window.document.getElementById('root')
+  const rootDestEl = window.document.getElementById('root')
 
-  render(createElement(Root, { store, RouteIndex }), destEl)
+  renderRoot({ rootDestEl, RouteIndex, store })
   return {
     firebase,
     store,
